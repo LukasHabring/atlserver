@@ -1010,7 +1010,7 @@ extern __declspec(selectany) const char * const s_szAtlsWSDLSrf = \
 "</definitions>"; \
 }
 
-#include <atlspriv.inl>
+#include "atlspriv.inl"
 }; // namespace ATL
 #pragma pack(pop)
 

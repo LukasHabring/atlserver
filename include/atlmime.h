@@ -24,9 +24,9 @@
 #include <atlfile.h>
 #include <atlcoll.h>
 #include <atlstr.h>
-#include <atlsmtputil.h>
+#include "atlsmtputil.h"
 #include <atlenc.h>
-#include <atlspriv.h>
+#include "atlspriv.h"
 
 #pragma warning(push)
 #pragma warning(disable: 4625) // copy constructor could not be generated because a base class copy constructor is inaccessible
@@ -1284,7 +1284,7 @@ protected:
 				*pnRequiredLength = Base64EncodeGetRequiredLength(ATLSMTP_MAX_BASE64_LINE_LENGTH);
 				break;
 			case ATLSMTP_UUENCODE:
-				m_pszEncodeString ="uuencode";
+				m_pszEncodeString = "uuencode";
 				*pnLineLength = ATLSMTP_MAX_UUENCODE_LINE_LENGTH;
 				*pnRequiredLength = UUEncodeGetRequiredLength(ATLSMTP_MAX_UUENCODE_LINE_LENGTH);
 				break;

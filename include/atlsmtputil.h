@@ -27,7 +27,7 @@
 #include <tchar.h>
 #include <atlstr.h>
 #include <winnls.h>
-#include <atlspriv.h>
+#include "atlspriv.h"
 
 //=======================================================================
 //defines for SMTPMail module
